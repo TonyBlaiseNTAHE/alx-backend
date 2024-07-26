@@ -3,6 +3,7 @@
 Simple helper function
 """
 
+
 def index_range(page: int, page_size: int) -> tuple:
     """
     args:
