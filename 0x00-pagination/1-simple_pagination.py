@@ -39,6 +39,11 @@ class Server:
         return self.__dataset
 
     def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
+        """
+        args: page: the page index
+              page_size: the number of index
+        returns: returns the right pagination
+        """
         assert isinstance(page, int) and isinstance(page_size, int)
         assert page > 0 and page_size > 0
 
