@@ -53,7 +53,6 @@ class Server:
             return []
         return self.dataset()[start_idx:end_idx]
 
-
     def get_hyper(self, page: int = 1, page_size: int = 10) -> Dict:
         """function that returns data from dataset in a dictionary
            args: page: the page index
