@@ -40,12 +40,14 @@ class Server:
         return self.__indexed_dataset
 
     def get_hyper_index(self, index: int = None, page_size: int = 10) -> Dict:
-        """function to return data from dataset in a dictionary, handling deletion-resilient pagination
+        """function to return data from dataset in a dictionary,
+            handling deletion-resilient pagination
            args:
                index: the start index of the return page
                page_size: the length of the returned dataset page
         """
-        assert isinstance(index, int) and index >= 0 and index < len(self.dataset())
+        assert isinstance(index, int) and index >= 0 \
+            and index < len(self.dataset())
         assert isinstance(page_size, int) and page_size > 0
 
         data = []
@@ -56,9 +58,8 @@ class Server:
             if current_index in self.__indexed_dataset:
                 data.append(self.__indexed_dataset[current_index])
             current_index += 1
-        
-        next_index = current_index
 
+        next_index = current_index
         return {
             'index': index,
             'next_index': next_index,
