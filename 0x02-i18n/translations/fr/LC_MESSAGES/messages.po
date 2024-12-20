@@ -3,22 +3,12 @@
 # This file is distributed under the same license as the PROJECT project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
-msgid "home_title"
-msgstr "Bienvenue chez Holberton"
-
-msgid "home_header"
-msgstr "Bonjour monde!"
-
-msgid "logged_in_as"
-msgstr "Vous êtes connecté en tant que %(username)s."
-
-msgid "not_logged_in"
-msgstr "Vous n'êtes pas connecté."
-
+msgid ""
+msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-04-10 02:52+0100\n"
-"PO-Revision-Date: 2024-04-10 02:52+0100\n"
+"POT-Creation-Date: 2024-02-07 01:21+0100\n"
+"PO-Revision-Date: 2024-02-07 01:21+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: fr\n"
 "Language-Team: fr <LL@li.org>\n"
@@ -28,3 +18,23 @@ msgstr "Vous n'êtes pas connecté."
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.14.0\n"
 
+#: templates/3-index.html:6 templates/4-index.html:6 templates/5-index.html:6
+msgid "home_title"
+msgstr "Bienvenue chez Holberton"
+
+#: templates/3-index.html:10 templates/4-index.html:10
+#: templates/5-index.html:10
+msgid "home_header"
+msgstr "Bonjour monde!"
+
+#: templates/5-index.html:13
+msgid "logged_in_as"
+msgstr "Vous êtes connecté en tant que %(username)s."
+
+#: templates/5-index.html:15
+msgid "not_logged_in"
+msgstr "Vous n'êtes pas connecté."
+
+#: templates/index.html:11
+msgid "current_time_is"
+msgstr "Nous sommes le %(current_time)s."

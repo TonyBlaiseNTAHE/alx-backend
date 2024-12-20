@@ -1,17 +1,14 @@
 #!/usr/bin/env python3
-"""0. Basic Flask app
-"""
+"""doc doc doc"""
 from flask import Flask, render_template
-
 
 app = Flask(__name__)
 
 
-@app.route('/')
+@app.route("/")
 def index():
-    """index
-    """
-    return render_template('0-index.html')
+    """doc doc doc"""
+    return render_template("0-index.html")
 
 
 if __name__ == "__main__":
